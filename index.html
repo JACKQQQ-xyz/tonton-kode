@@ -7,52 +7,48 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="index.js"></script>
 </head>
-<body>
+<body class="bg-slate-900">
 
 <!--Navbar-->    
 
-<nav class="bg-red-700 ">
-    <div class="mr-10 ml-10 flex flex-wrap items-center justify-between mx-auto p-6">
-      <a href="https://flowbite.com/" class="flex items-center space-x-2 rtl:space-x-reverse">
-            <span class="self-center text-3xl font-semibold text-white">TONTON</span>
-            <span class="self-center text-3xl font-bold text-white">KODE</span>
-      </a>
-      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-          </svg>
-      </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul class="font-bold text-1xl flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-red-700">
-          <li>
-            <a href="#" class="text-white max-lg:border-b max-lg:py-3 relative lg:after:absolute lg:after:bg-white lg:after:w-full lg:after:h-[3px] lg:after:block lg:after:-bottom-2 lg:after:transition-all lg:after:duration-300" aria-current="page">Home</a>
-          </li>
-          <li>
-            <a href="#" class="text-white max-lg:border-b max-lg:py-3 relative lg:hover:after:absolute lg:after:bg-white lg:after:w-0 lg:hover:after:w-full lg:hover:after:h-[3px] lg:after:block lg:after:-bottom-2 lg:after:transition-all lg:after:duration-300 ">About</a>
-          </li>
-          <li>
-            <a href="#" class="text-white max-lg:border-b max-lg:py-3 relative lg:hover:after:absolute lg:after:bg-white lg:after:w-0 lg:hover:after:w-full lg:hover:after:h-[3px] lg:after:block lg:after:-bottom-2 lg:after:transition-all lg:after:duration-300 ">Services</a>
-          </li>
-          <li>
-            <a href="#" class="text-white max-lg:border-b max-lg:py-3 relative lg:hover:after:absolute lg:after:bg-white lg:after:w-0 lg:hover:after:w-full lg:hover:after:h-[3px] lg:after:block lg:after:-bottom-2 lg:after:transition-all lg:after:duration-300 ">Pricing</a>
-          </li>
-          <li>
-            <a href="#" class="text-white max-lg:border-b max-lg:py-3 relative lg:hover:after:absolute lg:after:bg-white lg:after:w-0 lg:hover:after:w-full lg:hover:after:h-[3px] lg:after:block lg:after:-bottom-2 lg:after:transition-all lg:after:duration-300 ">Contact</a>
-          </li>
-        </ul>
+    <header class='sticky top-0 drop-shadow-lg flex border-b bg-teal-600 font-sans min-h-[70px] tracking-wide relative z-50'>
+        <div class='flex flex-wrap items-center justify-between sm:px-10 px-4 py-3 gap-4 w-full max-w-screen-240 mx-auto'>
+        <a href="index.html" class="drop-shadow-lg"><img src="assets/TONTON KODE 2.png" alt="logo" class='w-80' />
+        </a>  
+            <ul
+            class='lg:flex lg:gap-x-10 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
+            <li class='max-lg:border-b max-lg:py-3'><a href='index.html'
+                class='hover:bg-teal-500 p-2 rounded-sm text-white text-[20px] font-bold block'>Home</a></li>
+            <li class='group max-lg:border-b max-lg:py-3 relative'>
+                <a href='javascript:void(0)'
+                class='hover:bg-teal-500 p-2 rounded-sm text-white text-[20px] font-bold block'>Tutorial
+                </a>
+                <ul
+                class='absolute  rounded-lg bg-teal-600 space-y-3 lg:top-13 -left-5 min-w-[25px] z-10 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-[500px] px-3 group-hover:pb-4 group-hover:pt-4 transition-all duration-500'>
+                <li class='border-b-2 border-white py-2 text-center'><a href='tutorhtml.html'
+                    class='hover:bg-teal-500 p-2 rounded-sm text-white text-[20px] font-bold'>HTML</a></li>
+                <li class='border-b-2 border-white py-2 text-center'><a href='javascript:void(0)'
+                    class='hover:bg-teal-500 p-2 rounded-sm text-white text-[20px] font-bold'>CSS</a></li>
+                <li class='border-b-2 border-white py-2 text-center'><a href='javascript:void(0)'
+                    class='hover:bg-teal-500 p-2 rounded-sm text-white text-[20px] font-bold'>JavaScript</a></li>
+                </ul>
+            </li>
+            <li class='max-lg:border-b max-lg:py-3'><a href='javascript:void(0)'
+                class='hover:bg-teal-500 p-2 rounded-sm text-white text-[20px] font-bold block'>About</a></li>
+            </ul>
         </div>
-    </nav>
+        </div>
+    </header>
   
     <!--Hero-->
 
-    <section class="bg-gray-100">
-        <div class="container flex flex-col justify-center p-9 mx-auto sm:py-12 lg:py-43 lg:flex-row lg:justify-between">
+    <section class="bg-slate-800">
+        <div class="container flex flex-col justify-center p-9 mx-auto sm:py-12 lg:py-45 lg:flex-row lg:justify-between">
             <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-2xl lg:text-left">
-                <h1 class="text-5xl font-bold leading-none sm:text-6xl">Selamat Datang di
-                    <span class="text-red-700">Tonton KODE</span>,
+                <h1 class="text-5xl font-bold leading-none sm:text-6xl text-white">Selamat Datang di
+                    <span class="text-teal-400">Tonton KODE</span>,
                 </h1>
-                <p class="mt-6 mb-8 text-xl sm:mb-12">
+                <p class="mt-6 mb-8 text-xl sm:mb-12 text-gray-200">
                     Selamat datang di Tonton Kode, platform inovatif untuk pemula yang ingin belajar coding dengan cara yang menyenangkan dan sederhana. 
                     Melalui koleksi video pembelajaran berkualitas tinggi, Tonton Kode memudahkan siapa saja untuk memahami dasar-dasar pemrograman, memperluas wawasan teknologi, dan membangun fondasi coding yang kuat. 
                     Situs ini dirancang khusus untuk membantu setiap pengguna, tanpa memandang latar belakang, memulai perjalanan coding mereka dengan percaya diri. 
@@ -68,17 +64,17 @@
     <!--Title-->
 
     <div class="max-w-3xl mx-auto text-center mt-12">
-        <h1 class="text-6xl font-bold text-gray-900 leading-tight mb-2 border-b-2 border-gray-500 pb-2">
+        <h1 class="text-6xl font-bold text-white leading-tight mb-2 border-b-5 border-teal-500 pb-2">
           Mau Belajar Apa?
         </h1>
       </div>
 
     <!--List  -->
-    <div class="grid grid-row-10 gap-5 m-5">
+    <div class="grid grid-row-10 gap-5 m-5 mb-15">
         <div class="flex items-center justify-center">
             <div class="inline-flex mr-100 ml-100">  
-                <div class="relative flex flex-col md:flex-row w-full bg-white shadow-sm border border-slate-200 rounded-lg w-100">
-                    <div class="relative p-2.5 shrink-0 overflow-hidden">
+                <div class="relative flex flex-col md:flex-row w-full bg-slate-800 shadow-sm border-3 border-teal-500 rounded-lg w-100">
+                    <div class="relative p-2.5 shrink-0 overflow-hidden ">
                     <img
                         src="assets/html.png"
                         alt="card-image"
@@ -87,15 +83,15 @@
                     />
                     </div>
                     <div class="p-6">
-                    <h4 class="mb-2 text-slate-800 text-4xl font-bold">
+                    <h4 class="mb-2 text-teal-400 text-4xl font-bold">
                         Tutorial HTML Untuk Pemula
                     </h4>
-                    <p class="mb-2 text-slate-600 text-xl leading-normal font-light">
+                    <p class="mb-2 text-white text-xl leading-normal font-normal">
                         HTML adalah bahasa markup yang digunakan untuk membangun struktur dasar halaman web.
                          Dengan HTML, pengembang dapat menentukan elemen-elemen seperti heading, paragraf, gambar, dan tautan sehingga browser dapat menampilkan konten sesuai dengan yang diinginkan.
                     </p>
                     <div>
-                        <a href="tutorhtml.html" class="text-slate-800 font-semibold text-xl hover:underline flex items-center">
+                        <a href="tutorhtml.html" class="text-white font-semibold mt-4 text-xl hover:underline flex items-center">
                         Tonton Video
                         <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -109,7 +105,7 @@
 
         <div class="flex items-center justify-center">
             <div class="inline-flex mr-100 ml-100">  
-                <div class="relative flex flex-col md:flex-row w-full bg-white shadow-sm border border-slate-200 rounded-lg w-100">
+                <div class="relative flex flex-col md:flex-row w-full bg-slate-800 shadow-sm border-3 border-teal-500 rounded-lg w-100">
                     <div class="relative p-2.5 shrink-0 overflow-hidden">
                     <img
                         src="assets/css.png"
@@ -119,15 +115,15 @@
                     />
                     </div>
                     <div class="p-6">
-                    <h4 class="mb-2 text-slate-800 text-4xl font-bold">
+                    <h4 class="mb-2 text-teal-400 text-4xl font-bold">
                         Tutorial CSS Untuk Pemula
                     </h4>
-                    <p class="mb-2 text-slate-600 text-xl leading-normal font-light">
+                    <p class="mb-2 text-white text-xl leading-normal font-normal">
                         CSS adalah teknologi yang digunakan untuk mengatur tampilan dan tata letak halaman web. 
                         Dengan CSS, pengembang dapat menyesuaikan warna, font, ukuran, dan posisi elemen untuk menciptakan desain yang menarik dan responsif.
                     </p>
                     <div>
-                        <a href="javascript.html" class="text-slate-800 font-semibold text-xl hover:underline flex items-center">
+                        <a href="javascript.html" class="text-white font-semibold mt-4 text-xl hover:underline flex items-center">
                         Tonton Video
                         <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -141,7 +137,7 @@
 
         <div class="flex items-center justify-center">
             <div class="inline-flex mr-100 ml-100">  
-                <div class="relative flex flex-col md:flex-row w-full bg-white shadow-sm border border-slate-200 rounded-lg w-100">
+                <div class="relative flex flex-col md:flex-row w-full bg-slate-800 shadow-sm border border-teal-500 border-3 rounded-lg w-100">
                     <div class="relative p-2.5 shrink-0 overflow-hidden">
                     <img
                         src="assets/javascript.png"
@@ -151,15 +147,15 @@
                     />
                     </div>
                     <div class="p-6">
-                    <h4 class="mb-2 text-slate-800 text-4xl font-bold">
+                    <h4 class="mb-2 text-teal-400 text-4xl font-bold">
                         Tutorial JavaScript Untuk Pemula
                     </h4>
-                    <p class="mb-2 text-slate-600 text-xl leading-normal font-light">
+                    <p class="mb-2 text-white text-xl leading-normal font-normal">
                         JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web interaktif.
                         Ini memungkinkan pengembang untuk menambah fungsionalitas dinamis pada situs, seperti validasi form dan animasi.
                     </p>
                     <div>
-                        <a href="javascript.html" class="text-slate-800 font-semibold text-xl hover:underline flex items-center">
+                        <a href="javascript.html" class="text-white font-semibold text-xl hover:underline flex items-center">
                         Tonton Video
                         <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
