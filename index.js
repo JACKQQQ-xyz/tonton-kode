@@ -17,3 +17,4 @@ function handleClick() {
 
 toggleOpen.addEventListener('click', handleClick);
 toggleClose.addEventListener('click', handleClick);
+
